@@ -1,0 +1,67 @@
+{
+  "version": "0.4.0",
+  "environment": "live_public",
+  "scanner_skill": "swap-momentum-scan-validate",
+  "bar": "6H",
+  "top_n": 50,
+  "candle_limit": 200,
+  "price_change_min": 1.0,
+  "vol_ratio_min": 1.5,
+  "rsi_long": [
+    50,
+    72
+  ],
+  "rsi_short": [
+    28,
+    50
+  ],
+  "max_spread_bps": 20,
+  "stop_loss_pct": 2.0,
+  "reward_risk": 1.5,
+  "plan_expiry_bars": 1,
+  "groups": {
+    "major": {
+      "symbols": [
+        "BTC",
+        "ETH",
+        "SOL",
+        "DOGE"
+      ],
+      "trend_bar": "1D",
+      "entry_bar": "6H",
+      "correlation_bucket": "crypto-beta"
+    },
+    "fast": {
+      "trend_bar": "4H",
+      "entry_bar": "15m"
+    }
+  },
+  "notifications": {
+    "recipient": "",
+    "transport": "qq-smtp",
+    "enabled": false
+  },
+  "risk": {
+    "equity_usdt": 200,
+    "risk_pct": 2.0,
+    "max_loss_usdt": 20,
+    "leverage": 1,
+    "max_total_risk_pct": 8,
+    "max_related_risk_pct": 6,
+    "max_gross_pct": 100,
+    "daily_loss_limit_pct": 8,
+    "existing_risk_usdt": null,
+    "existing_gross_usdt": null,
+    "available_margin_usdt": null,
+    "taker_fee_rate": 0.0005,
+    "slippage_bps": 5,
+    "funding_cost_pct": 0.03,
+    "fee_basis": "configured_estimate_not_account_vip_rate",
+    "portfolio_mode": "INDICATIVE_SINGLE_PLAN_NOT_RECONCILED_WITH_ACCOUNT"
+  },
+  "execution": "MANUAL_ALERT_ONLY",
+  "proxy": null,
+  "universe_refresh_hours": 24,
+  "fast_min_volume_usdt": 100000000,
+  "fast_excursion_pct": 10
+}

@@ -1,0 +1,7 @@
+data/
+reports/
+__pycache__/
+*.pyc
+state.enc
+current-batch.json
+market-import/
